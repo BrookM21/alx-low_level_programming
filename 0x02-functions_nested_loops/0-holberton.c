@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * _isalpha  - check if letter is lowercase,uppercase or not
- * @c: character to hold letter
- * Return: 1 if lowerOrupper else 0
+ * main - Entry point
+ * Return: Always 0 (Success)
  */
-int _isalpha(int c)
+int main(void)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	int i;
+	char c[] = "_putchar";
+
+	for (i = 0; i < 8; i++)
 	{
-		return (1);
+	_putchar(c[i]);
 	}
-	else
-	{
-		return (0);
-	}
+	_putchar('\n');
+	return (0);
 }
