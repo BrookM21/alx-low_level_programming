@@ -1,19 +1,17 @@
 #include "main.h"
 /**
- * main - prints Holberton, followed by a new line.
- *
- * Return: Always 0 (Success)
+ * _isalpha  - check if letter is lowercase,uppercase or not
+ * @c: character to hold letter
+ * Return: 1 if lowerOrupper else 0
  */
-int main(void)
+int _isalpha(int c)
 {
-	
-	int i;
-	char c[] = "_putchar";
-
-	for (i = 0; i < 8; i++)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-	_putchar(c[i]);
+		return (1);
 	}
-	_putchar('\n');
-	return (0);
+	else
+	{
+		return (0);
+	}
 }
